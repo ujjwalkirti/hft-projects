@@ -7,6 +7,7 @@ add_executable(feed_handler
     src/main.cpp
     src/utils/mmap_reader.cpp
     src/itch/itch_parser.cpp
+    src/itch/itch_messages_generator.cpp
 )
 
 target_include_directories(feed_handler PRIVATE src)

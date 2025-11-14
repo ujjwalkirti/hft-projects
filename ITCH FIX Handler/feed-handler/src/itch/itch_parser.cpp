@@ -42,7 +42,7 @@ void ItchParser::parseAll()
             const AddOrderMessage* msg = reinterpret_cast<const AddOrderMessage*>(data_ + pos);
 
             std::cout << "---- Add Order ----\n";
-            std::cout << "Timestamp: " << msg << "\n";
+            std::cout << "Timestamp: " << msg->timestamp << "\n";
             std::cout << "Order ID:  " << msg->orderId << "\n";
             std::cout << "Side:      " << msg->side << "\n";
             std::cout << "Shares:    " << msg->shares << "\n";
